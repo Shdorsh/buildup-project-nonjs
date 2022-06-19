@@ -1,0 +1,103 @@
+:root {
+    --background-blue: #0F1014;
+    --footer-black: black;
+    --paragraph-grey: grey;
+}
+
+body {
+    background-color: var(--background-blue);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero */
+.hero {
+    height: 800px;
+    width: 100%;
+    background-image:url("../assets/meg_hero.jpg");
+    background-color: #00000088;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shd-margin-hor-2 {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.shd-border-top-1px {
+    border-top: 1px solid grey;
+}
+
+/* Movie card */
+.pbu-movie-card {
+    height: 450px;
+    width: 100%;
+}
+
+.pbu-movie-card > img:first-of-type {
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pbu-movie-card > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 11px;
+    color: var(--paragraph-grey);
+}
+
+
+.grid {
+    display: grid;
+    grid-template: 1fr 4fr / 1;
+}
+
+/* Footer */
+.shd-footer {
+    width: 100%;
+    background-color: var(--footer-black);
+    margin-top: 7em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.shd-footer > .container-fluid {
+    justify-content: center;
+}
+
+.shd-links {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.shd-margin-vert-4 {
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+.shd-footlink {
+    text-decoration: none;
+    color: var(--paragraph-grey);
+}
+
+.shd-footlink:hover {
+    color: white;
+}
